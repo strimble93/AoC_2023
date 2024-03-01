@@ -143,6 +143,7 @@
     <ClInclude Include="day1.h" />
     <ClInclude Include="day2.h" />
     <ClInclude Include="day3.h" />
+    <ClInclude Include="day4.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>

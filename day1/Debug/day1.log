@@ -8,5 +8,10 @@ c:\source\aoc_2023\day1\day2.h(118): warning C4018: '<=': signed/unsigned mismat
 c:\source\aoc_2023\day1\day3.h(39): warning C4018: '<': signed/unsigned mismatch
 c:\source\aoc_2023\day1\day3.h(53): warning C4018: '<=': signed/unsigned mismatch
 c:\source\aoc_2023\day1\day3.h(98): warning C4018: '<': signed/unsigned mismatch
+c:\source\aoc_2023\day1\day4.h(34): warning C4018: '>=': signed/unsigned mismatch
+c:\source\aoc_2023\day1\day4.h(48): warning C4018: '<': signed/unsigned mismatch
+c:\source\aoc_2023\day1\day4.h(85): warning C4018: '<': signed/unsigned mismatch
+c:\source\aoc_2023\day1\day4.h(109): warning C4018: '<': signed/unsigned mismatch
+c:\source\aoc_2023\day1\day4.h(110): warning C4018: '<': signed/unsigned mismatch
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   day1.vcxproj -> C:\source\AoC_2023\Debug\Advent of Code.exe

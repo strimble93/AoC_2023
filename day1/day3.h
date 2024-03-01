@@ -7,7 +7,6 @@
 
 using namespace std;
 
-constexpr auto filename = "day3.txt";
 
 void day3();
 bool issymbol(string str, int i);
@@ -18,6 +17,7 @@ bool isstar(string str, int i);
 
 
 void day3() {
+	string filename = "day3.txt";
 	int output = 0;
 	fstream day_file;
 	day_file.open(filename, ios::in);
@@ -93,10 +93,11 @@ int validnumbers(string str0, string str1, string str2){
 int gears(string str0, string str1, string str2){
 	int output = 0;
 	int gears = 0;
-	int gear[1] = { 0 };
-	string gearstr[1];
+	int gear[2] = { };
+	string gearstr[2];
 	for (int i = 0; i < str1.length(); i++) {
 		if (isstar(str1, i)) {
+			gears = 0;
 			if (isdigit(str0[i - 1])) {
 				gear[gears] = i - 1;
 				gearstr[gears] = str0;
@@ -104,13 +105,13 @@ int gears(string str0, string str1, string str2){
 			}
 			if (isdigit(str0[i]) && !isdigit(str0[i - 1]))
 			{
-				gear[gears] = i - 1;
+				gear[gears] = i;
 				gearstr[gears] = str0;
 				gears++;
 			}
 			if (isdigit(str0[i+1]) && !isdigit(str0[i]))
 			{
-				gear[gears] = i - 1;
+				gear[gears] = i + 1;
 				gearstr[gears] = str0;
 				gears++;
 			}
@@ -120,7 +121,7 @@ int gears(string str0, string str1, string str2){
 				gears++;
 			}
 			if (isdigit(str1[i + 1])) {
-				gear[gears] = i - 1;
+				gear[gears] = i + 1;
 				gearstr[gears] = str1;
 				gears++;
 			}
@@ -131,13 +132,13 @@ int gears(string str0, string str1, string str2){
 			}
 			if (isdigit(str2[i]) && !isdigit(str2[i - 1]))
 			{
-				gear[gears] = i - 1;
+				gear[gears] = i;
 				gearstr[gears] = str2;
 				gears++;
 			}
 			if (isdigit(str2[i + 1]) && !isdigit(str2[i]))
 			{
-				gear[gears] = i - 1;
+				gear[gears] = i + 1;
 				gearstr[gears] = str2;
 				gears++;
 			}
